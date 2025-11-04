@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          push: false
+          load: true
           tags: local/lab6-ci-docker:latest
 
       - name: Run container and test
